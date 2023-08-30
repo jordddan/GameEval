@@ -9,19 +9,15 @@ specific goals achieved by launching conversations of various forms, including d
 ## Involved Capabilities
 GameEval is distinct from other evaluation methods, as it requires not only the model’s common capabilities like instruct-following but also the model’s higher-level skills, including cooperative&adversarial strategies, and even deceptive strategies and long-term planning. In this section, we introduce various distinctive capabilities that can be effectively evaluated by conversational games. We show shows the
 capabilities of LLMs that can be examined by these games.
-$$
-\begin{array}{c|ccc}
-\hline \text { Capabilities } & \text { Ask-Guess } & \text { SpyFall } & \text { TofuKingdom } \\
-\hline \text { Cooperative Strategy } & \checkmark & \checkmark & \checkmark \\
-\text { Adversarial Strategy } & X & \checkmark & \checkmark \\
-\text { Specific Knowledge } & \checkmark & \checkmark & X \\
-\text { Multi-hop Reasoning } & \checkmark & \checkmark & \checkmark \\
-\text { Deceptive Strategy } & X & \checkmark & \checkmark \\
-\text { Long-term Planning } & \checkmark & \checkmark & X \\
-\text { Instruct-Following } & \checkmark & \checkmark & \checkmark \\
-\hline
-\end{array}
-$$
+| Capabilities         	| Ask-Guess 	| SpyFall 	| TofuKingdom 	|
+|----------------------	|-----------	|---------	|-------------	|
+| Cooperative Strategy 	| ✓         	| ✓       	| ✓           	|
+| Adversarial Strategy 	| X         	| ✓       	| ✓           	|
+| Specific Knowledge   	| ✓         	| ✓       	| X           	|
+| Multi-hop Reasoning  	| ✓         	| ✓       	| ✓           	|
+| Deceptive Strategy   	| X         	| ✓       	| ✓           	|
+| Long-term Planning   	| ✓         	| ✓       	| X           	|
+| Instruct-Following   	| ✓         	| ✓       	| ✓           	|
 
 
 ## Expiremental Result of the Original Version
@@ -94,7 +90,7 @@ python game.py \
 ### Case
 To better understand how conversational games reflect the gap in model capabilities, we show the game dialogue in Ask-Guess without prior description.
 <p align=center>
-  <img src="assets/case1.png?raw=true" width="80%" />
+  <img src="assets/case1.png?raw=true" width="100%" />
 </p>
 As we can see, both ChatGPT and GPT-4 can correctly understand the tasks, and they ask and answer questions according to the game rules.
 However, for a given goal, GPT-4 has demonstrated an astonishing planning ability; the series of questions it asks follow a specific taxonomy. In each round, GPT-4 shows a clear awareness of the impossible objectives that have been ruled out by previous Q\&A and ask new questions targeted at the remaining part. However, the questions ChatGPT asks seem more disorganized and disoriented.

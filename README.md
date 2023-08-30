@@ -35,23 +35,17 @@ $$
 The reult of the easy version. (with prior description from the answerer)
 | Model | Round | ST | EE | RLE | AME | CE |
 |---|---|---|---|---|---|---|
-| TD003 | 4.39 | 82.71 | 9.47 | 1.84 | 5.9 7 | 0.01 |
+| TD003 | 4.39 | 82.71 | 9.47 | 1.84 | 5.97 | 0.01 |
 | ChatGPT | 6.01 | 53.39 | 8.13 | 14.63 | 23.21 | 0.64 |
 | GPT4 | 1.57 | 97.69 | 0.80 | 1.01 | 0.47 | 0.03 |
 
 The reult of the hard version. (without prior description from the answerer)
 
-$$
-\begin{array}{l|c|ccccc}
-\hline
- Model &  Round & \text { ST } & \text { EE } & \text { RLE } & \text { AME } & \text { CE } \\
-
-\hline \text { TD003 } & 15.13 & 42.36 & 19.18 & 37.19 & 0.36 & 0.91 \\
-\text { ChatGPT } & 13.78 & 40.50 & 3.88 & 49.89 & 4.57 & 1.16 \\
-\text { GPT4 } & 4.01 & 92.77 & 2.95 & 0.84 & 2.75 & 0.69 \\
-\hline
-\end{array}
-$$
+| Model   	| Round 	| ST    	| EE    	| RLE   	| AME  	| CE   	|
+|---------	|-------	|-------	|-------	|-------	|------	|------	|
+| TD003   	| 15.13 	| 42.36 	| 19.18 	| 37.19 	| 0.36 	| 0.91 	|
+| ChatGPT 	| 13.78 	| 40.50 	| 3.88  	| 49.89 	| 4.57 	| 1.16 	|
+| GPT4    	| 4.01  	| 92.77 	| 2.95  	| 0.84  	| 2.75 	| 0.69 	|
 
 ### SpyFall
 S-model means the model plays the spy, V-model means the model plays the villagers.
@@ -62,20 +56,16 @@ S-model means the model plays the spy, V-model means the model plays the village
 
 ### TofuKingdom
 We let different LLMs play all the roles in the same camps to perform a adversarial game. The model that represent a winning camp can get one point. 
-$$
-\begin{array}{ccc|ccc}
-\hline 
-\text { Prince } & \text { Spy } & \text { Queen } & \text { ChatGPT } & \text { GPT-4 } & \text { TD003 } \\
-\hline \text { TD003 } & \text { GPT-4 } & \text { ChatGPT } & 7 & 9 & 4 \\
-\text { TD003 } & \text { ChatGPT } & \text { GPT-4 } & 5 & 11 & 4 \\
-\text { ChatGPT } & \text { GPT-4 } & \text { TD003 } & 8 & 7 & 5 \\
-\text { ChatGPT } & \text { TD003 } & \text { GPT-4 } & 5 & 9 & 6 \\
-\text { GPT-4 } & \text { TD003 } & \text { ChatGPT } & 6 & 7 & 7 \\
-\text { GPT-4 } & \text { ChatGPT } & \text { TD003 } & 8 & 8 & 4 \\
-\hline & Total Points & & 39 & 51 & 30 \\
-\hline
-\end{array}
-$$
+
+| Prince  	| Spy     	| Queen   	| ChatGPT 	| GPT4 	| TD003 	|
+|---------	|---------	|---------	|---------	|------	|-------	|
+| TD003   	| GPT4    	| ChatGPT 	| 7       	| 9    	| 4     	|
+| TD003   	| ChatGPT 	| GPT4    	| 5       	| 11   	| 4     	|
+| ChatGPT 	| GPT4    	| TD003   	| 8       	| 7    	| 5     	|
+| ChatGPT 	| TD003   	| GPT4    	| 5       	| 9    	| 6     	|
+| GPT4    	| TD003   	| ChatGPT 	| 6       	| 7    	| 7     	|
+| GPT4    	| ChatGPT 	| TD003   	| 8       	| 8    	| 4     	|
+| -       	| -       	| Total   	| 39      	| 51   	| 30    	|
 
 
 ## Illusration

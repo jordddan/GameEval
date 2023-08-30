@@ -33,17 +33,11 @@ $$
 
 ### Ask-Guess
 The reult of the easy version. (with prior description from the answerer)
-$$
-\begin{array}{l|c|ccccc}
-\hline
- Model &  Round & \text { ST } & \text { EE } & \text { RLE } & \text { AME } & \text { CE } \\
-
-\hline \text { TD003 } & 4.39 & 82.71 & 9.47 & 1.84 & 5.97 & 0.01 \\
-\text { ChatGPT } & 6.01 & 53.39 & 8.13 & 14.63 & 23.21 & 0.64 \\
-\text { GPT4 } & 1.57 & 97.69 & 0.80 & 1.01 & 0.47 & 0.03 \\
-\hline
-\end{array}
-$$
+| Model | Round | ST | EE | RLE | AME | CE |
+|---|---|---|---|---|---|---|
+| TD003 | 4.39 | 82.71 | 9.47 | 1.84 | 5.9 7 | 0.01 |
+| ChatGPT | 6.01 | 53.39 | 8.13 | 14.63 | 23.21 | 0.64 |
+| GPT4 | 1.57 | 97.69 | 0.80 | 1.01 | 0.47 | 0.03 |
 The reult of the hard version. (without prior description from the answerer)
 $$
 \begin{array}{l|c|ccccc}

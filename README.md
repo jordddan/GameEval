@@ -79,9 +79,10 @@ Ask-Guess is a cooperative game involving a questioner and an answerer. At the b
 **You can direct use the following script to use model `ChatGPT` to play the game.** You can set the word to be guessed in `label_path` and `n` means run n times for each word. The result and the game log will be automatically recorded.
 ```  
 cd ask-guess
-python game.py \ 
+python game_askguess.py \ 
     --label_path test_labels.json \
     --model_name gpt3 \
+    --mode easy \
     --debug false \
     --n 30
 ```
@@ -97,9 +98,64 @@ However, for a given goal, GPT-4 has demonstrated an astonishing planning abilit
 
 
 ## SpyFall
-will be released soon 
+
+### Game Introduction 
+This game has six players, including one spy and five villagers.
+At the beginning of the game, everyone will receive a word.
+The spy will receive the spy word, and others will receive the common word.
+Spy word is different but relevant to the common word. For example, the spy word can be "lion," and the common word is "tiger."
+There are two stages in each round of the game.
+In the first stage, everyone needs to describe the word he got but cannot say the given word directly.
+In the second stage, everyone should vote for a player he thinks is the spy according to the descriptions in the first stage and state why he thinks this player is a spy.
+
+### Get Started 
+
+```
+cd spyfall
+python game_spyfall.py \ 
+    --label_path spyfall/labels.txt \
+    --prince_model_name gpt3 \
+    --queen_model_name gpt4 \
+    --spy_model_name td003 \
+    --debug false \
+    --n 30
+```
+
 ## TofuKingdom
-will be released soon
+
+### Game Introduction
+This game is a role-playing text reasoning game.
+It has eight roles, including Prince, Princess, Queen, Minister, Chef, Guard, Maid, and Spy.
+The players, except the Prince, know the real identity of the rest of the players.
+The Prince needs to guess which player is the Princess by asking one question to each player.
+During the game, the Prince's question can only be chosen from the three questions below: 
+1. Who is the Princess;
+2. What is your identity;
+3. What is the identity of \{player\_name\}.
+
+There are three different camps in this game.
+The Princess and Chef belong to the Prince Camp; they must tell the truth when answering the question.
+The Queen, Minister, and Guard belong to the Queen Camp; they must tell a lie when answering the question.
+The Spy and the Maid belong to the Spy Camp and can choose to speak the truth or lie.
+After asking each player one question, the Prince can still choose one player to ask an extra question.
+The question should also be chosen from one of the three questions mentioned above.
+Then the Prince has to choose a player who he thinks is the Princess.
+If the Prince correctly chooses Princess, the Chef and the Princess win.
+If the Prince chooses the Queen, the Queen, Minister, and Guard win.
+If the Prince chooses a player whose identity is neither the Princess nor the Queen, the Maid and Spy wins. 
+
+### Get Started
+```
+cd spyfall
+python game_spyfall.py \ 
+    --label_path spyfall/labels.txt \
+    --prince_model_name gpt3 \
+    --queen_model_name gpt4 \
+    --spy_model_name td003 \
+    --debug false \
+    --n 20  
+```
+
 
 ## Citing GameEval
 

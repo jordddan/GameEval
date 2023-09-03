@@ -64,12 +64,28 @@ We let different LLMs play all the roles in the same camps to perform a adversar
 | -       	| -       	| Total   	| 39      	| 51   	| 30    	|
 |
 
-## Illusration
+## Illustration
 Below is a simple demonstration of three designed games: Ask-Guess, SpyFall and TofuKingdom.
 <p align=center>
   <img src="assets/GameEval.png?raw=true" width="80%" />
 </p>
 
+
+## How to use GameEval
+
+### For Azure OpenAI
+You can create a `chat/config.py` file with reference to the `chat/config_example.py` file, and fill in your Azure OpenAI account information.
+
+### For other LLMs
+For other models including Official OpenAI models and open-source models, you can create a chat file in folder `chat` to create a chatbot which receive messsages or text prompt as input and give the response as output.
+You can read other files in folder `chat` for reference.
+
+### Install Packages
+```
+pip install openai
+pip install vthread
+pip intsall func_timeout
+```
 
 ## Ask-Guess
 ### Game Introduction

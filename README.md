@@ -18,7 +18,7 @@ capabilities of LLMs that can be examined by these games.
 | Deceptive Strategy   	| X         	| ✓       	| ✓           	|
 | Long-term Planning   	| ✓         	| ✓       	| X           	|
 | Instruct-Following   	| ✓         	| ✓       	| ✓           	|
-||||
+
 
 ## Expiremental Result of the Original Version
 
@@ -62,7 +62,6 @@ We let different LLMs play all the roles in the same camps to perform a adversar
 | GPT4    	| TD003   	| ChatGPT 	| 6       	| 7    	| 7     	|
 | GPT4    	| ChatGPT 	| TD003   	| 8       	| 8    	| 4     	|
 | -       	| -       	| Total   	| 39      	| 51   	| 30    	|
-|
 
 ## Illustration
 Below is a simple demonstration of three designed games: Ask-Guess, SpyFall and TofuKingdom.

@@ -1,0 +1,72 @@
+{
+ "ipad&iphone": {
+  "cnt_spy": 0,
+  "cnt_villager": 19,
+  "round_avg": 1.4210526315789473,
+  "rate": 0.0
+ },
+ "guitar&lute": {
+  "cnt_spy": 5,
+  "cnt_villager": 13,
+  "round_avg": 1.7777777777777777,
+  "rate": 0.2777777777777778
+ },
+ "BMW&BENZ": {
+  "cnt_spy": 5,
+  "cnt_villager": 15,
+  "round_avg": 1.9,
+  "rate": 0.25
+ },
+ "eyebrow&beard": {
+  "cnt_spy": 3,
+  "cnt_villager": 17,
+  "round_avg": 1.75,
+  "rate": 0.15
+ },
+ "Grape&Raisins": {
+  "cnt_spy": 2,
+  "cnt_villager": 18,
+  "round_avg": 1.45,
+  "rate": 0.1
+ },
+ "sea_lion&seal": {
+  "cnt_spy": 3,
+  "cnt_villager": 17,
+  "round_avg": 1.55,
+  "rate": 0.15
+ },
+ "spider_man&batman": {
+  "cnt_spy": 2,
+  "cnt_villager": 18,
+  "round_avg": 1.8,
+  "rate": 0.1
+ },
+ "nike&adidas": {
+  "cnt_spy": 2,
+  "cnt_villager": 16,
+  "round_avg": 1.7777777777777777,
+  "rate": 0.1111111111111111
+ },
+ "milk&soy_milk": {
+  "cnt_spy": 1,
+  "cnt_villager": 19,
+  "round_avg": 1.3,
+  "rate": 0.05
+ },
+ "motorcycle&electromobile": {
+  "cnt_spy": 2,
+  "cnt_villager": 18,
+  "round_avg": 1.6,
+  "rate": 0.1
+ },
+ "tiger&lion": {
+  "cnt_spy": 2,
+  "cnt_villager": 18,
+  "round_avg": 1.45,
+  "rate": 0.1
+ },
+ "avg": {
+  "round_avg": 1.7776608187134506,
+  "rate": 0.13888888888888892
+ }
+}

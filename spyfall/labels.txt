@@ -1,0 +1,11 @@
+ipad,iphone
+guitar,lute
+BMW,BENZ
+eyebrow,beard
+Grape,Raisins
+sea_lion,seal
+spider_man,batman
+nike,adidas
+milk,soy_milk
+motorcycle,electromobile
+tiger,lion
